@@ -5,9 +5,9 @@ MOUSEEVENTF_MOVE = 0x0001
 print("press ctrl-c to end mouse shaker")
 try:
     while True:
-        mouse_event(MOUSEEVENTF_MOVE,1,0,0,0)
+        mouse_event(MOUSEEVENTF_MOVE,5,0,0,0)
         time.sleep(1)
-        mouse_event(MOUSEEVENTF_MOVE,-1,0,0,0)
+        mouse_event(MOUSEEVENTF_MOVE,-5,0,0,0)
         time.sleep(1)
 except KeyboardInterrupt:
     pass
